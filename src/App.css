@@ -1,0 +1,159 @@
+/* App.css - Paradise Nursery Landing Page Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.landing-page {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.landing-page.fade-out {
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* Background image implementing Paradise Nursery greenhouse */
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cdn.pixabay.com/photo/2017/07/13/08/59/greenhouse-2499758_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: brightness(0.65);
+  z-index: 0;
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100%;
+  min-height: 100vh;
+  padding: 40px 60px;
+  backdrop-filter: blur(3px);
+  background: rgba(10, 25, 15, 0.45);
+}
+
+.landing_content {
+  max-width: 480px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #ffffff;
+}
+
+.company-title {
+  font-size: 3.2rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #ffffff;
+  margin-bottom: 8px;
+  text-shadow: 0 3px 12px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.company-title .leaf-icon {
+  color: #4ade80;
+}
+
+.company-tagline {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #a7f3d0;
+  margin-bottom: 16px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+.divider {
+  width: 70px;
+  height: 4px;
+  background: #34d399;
+  border-radius: 2px;
+  margin-bottom: 20px;
+}
+
+.company-intro {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #f1f5f9;
+  margin-bottom: 30px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+.get-started-button {
+  background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  color: #ffffff;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 6px 20px rgba(16, 185, 129, 0.4);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.get-started-button:hover {
+  background: linear-gradient(135deg, #059669 0%, #047857 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(16, 185, 129, 0.5);
+}
+
+.get-started-button:active {
+  transform: translateY(0);
+}
+
+.about-us-wrapper {
+  max-width: 600px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column;
+    padding: 60px 24px;
+    gap: 35px;
+    text-align: center;
+  }
+  .landing_content {
+    align-items: center;
+    text-align: center;
+  }
+  .company-title {
+    font-size: 2.6rem;
+    justify-content: center;
+  }
+  .divider {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

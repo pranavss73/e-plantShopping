@@ -1,0 +1,58 @@
+.about-us-container {
+  max-width: 650px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 30px 35px;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #ffffff;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  text-align: left;
+}
+
+.about-us-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+  color: #a7f3d0;
+  letter-spacing: -0.5px;
+}
+
+.about-us-tagline {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: #e2e8f0;
+  margin-bottom: 18px;
+  font-style: italic;
+  border-bottom: 2px solid rgba(167, 243, 208, 0.4);
+  padding-bottom: 10px;
+}
+
+.about-us-description {
+  font-size: 0.98rem;
+  line-height: 1.7;
+  color: #f1f5f9;
+  margin-bottom: 14px;
+}
+
+.about-us-content {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #e2e8f0;
+  margin-bottom: 12px;
+}
+
+.about-us-content strong {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .about-us-container {
+    padding: 20px 22px;
+    margin: 15px;
+  }
+  .about-us-heading {
+    font-size: 1.6rem;
+  }
+}
